@@ -1,15 +1,13 @@
 # eyekey
 // This file explains the purpose of Eyekey and its functionning
 
-Part I : Basic description of the program
-
 Eyekey is a software for cryptography using two key to encrypt files.
 
 -> The first key is a classic password
 
 -> The second key is a QRcode like pictogram, which I call "visual key" in this document
 
-The visual key is a QRcode composed of an array of 10 lines and 10 columns.
+The visual key is a QRcode composed of an array of 10 lines and 10 columns which is read by the program with the webcam of the computer.
 
 The right and left tops and bottoms of the visual key are used by the program to identify the limits of the visual key, and so the array contains 100 - 4 = 96 cases.
 
@@ -23,4 +21,6 @@ The program provides an easy way to generate a random visual key bitmap that can
 
 For a better security, I recommand to print the key instead of storing it in any device. By the way, the bitmap is automaticallay deleted in a secure way after the end of the program execution to make the process of key generation more secure.
 
+The program is using seven steps of crypting to encrypt the file, using algorithms like the xor method, vigenere and a alogithm I made.
 
+The combination of the visual key and the classical password method provides a double verification system and a very high level of security.
